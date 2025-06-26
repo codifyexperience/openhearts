@@ -119,24 +119,24 @@ with col2:
     Let's honor each other’s time and showcase our gifts for Christ!
     """)
 
-# Volunteer Section
-with st.expander("🙌 Click to View Volunteer Team"):
-    st.subheader("Volunteer Assignments")
-    volunteers = {
-        "Food & Refreshments": "Jen, Bing, Joy, Lee",
-        "Security": "Ron, Garnet, Jeremy, John",
-        "Registration": "Carmina, Nina",
-        "Music & Sound": "Mark Kalagayan",
-        "Coordinators": "James & Janelle",
-        "Speaker": "Pastor Michael Rhoad",
-        "Worship Team": "KC, Ariel, Sam, Zech, Kayla, Kamie, Jon",
-        "Facilitators": "[]",
-        "Games": "Gomer, Nina",
-        "Photographer": "Ian",
-        "Youth Leads": "Z & Mac",
-        "Social Media": "KC, Ariel",
-        "Video": "Andria, Ariel",
-        "Event Lead": "Mar Esplana"
-    }
-    for role, names in volunteers.items():
-        st.markdown(f"**{role}:** {names}")
+# # Volunteer Section
+# with st.expander("🙌 Click to View Volunteer Team"):
+#     st.subheader("Volunteer Assignments")
+#     volunteers = {
+#         "Food & Refreshments": "Jen, Bing, Joy, Lee",
+#         "Security": "Ron, Garnet, Jeremy, John",
+#         "Registration": "Carmina, Nina",
+#         "Music & Sound": "Mark Kalagayan",
+#         "Coordinators": "James & Janelle",
+#         "Speaker": "Pastor Michael Rhoad",
+#         "Worship Team": "KC, Ariel, Sam, Zech, Kayla, Kamie, Jon",
+#         "Facilitators": "[]",
+#         "Games": "Gomer, Nina",
+#         "Photographer": "Ian",
+#         "Youth Leads": "Z & Mac",
+#         "Social Media": "KC, Ariel",
+#         "Video": "Andria, Ariel",
+#         "Event Lead": "Mar Esplana"
+#     }
+#     for role, names in volunteers.items():
+#         st.markdown(f"**{role}:** {names}")
