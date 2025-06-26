@@ -63,14 +63,6 @@ st.markdown(f"""
 # Guaranteed-working native video
 st.video("youth_open_hearts.mp4")
 
-# Poster image row (collapsible)
-with st.expander("🖼️ View Event Posters"):
-    st.markdown(f"""
-        <div class="poster-row">
-            <img class="poster-img" src="data:image/png;base64,{poster2_base64}" width="400">
-            <img class="poster-img" src="data:image/png;base64,{poster1_base64}" width="400">
-        </div>
-    """, unsafe_allow_html=True)
 
 # Event Details
 st.markdown("### 📅 Event Details")
@@ -118,6 +110,16 @@ with col2:
     - **Solo:** 5–7 minutes  
     Let's honor each other’s time and showcase our gifts for Christ!
     """)
+
+# Poster image row (collapsible)
+with st.expander("🖼️ View Event Posters"):
+    st.markdown(f"""
+        <div class="poster-row">
+            <img class="poster-img" src="data:image/png;base64,{poster2_base64}" width="400">
+            <img class="poster-img" src="data:image/png;base64,{poster1_base64}" width="400">
+        </div>
+    """, unsafe_allow_html=True)
+
 
 #save changes
 # # Volunteer Section
