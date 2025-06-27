@@ -12,7 +12,7 @@ def image_to_base64(path, width=140):
     return base64.b64encode(buffer.getvalue()).decode()
 
 # Load and convert images
-logo_base64 = image_to_base64("99845A80-DBCD-4356-B37A-6F5EE36DFCD7.jpg", width=140)
+logo_base64 = image_to_base64("99845A80-DBCD-4356-B37A-6F5EE36DFCD7.jpg", width=200)
 poster1_base64 = image_to_base64("C38636C4-7A44-4208-9C3E-3BE0CCB9E111.PNG", width=400)
 poster2_base64 = image_to_base64("962E8984-7EFB-48B5-9932-07899C9D16D6.PNG", width=400)
 
@@ -42,10 +42,24 @@ st.markdown("""
             justify-content: center;
             gap: 20px;
             margin-top: 10px;
+            flex-wrap: wrap;
         }
         .poster-img {
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            .poster-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .poster-img {
+                max-width: 95vw;
+            }
         }
     </style>
 """, unsafe_allow_html=True)
@@ -55,8 +69,9 @@ st.markdown(f"""
     <div class="header">
         <img src="data:image/png;base64,{logo_base64}" />
         <h1>🌟 OPEN HEARTS SUMMER NIGHT</h1>
-        <h3>“Sharing the Love of God, Sharing the Gifts of God”</h3>
-        <p><strong>📖 1 John 4:19</strong> – “We love because He first loved us.”</p>
+        <h2>“Sharing the Love of God, Sharing the Gifts of God”</h2>
+        <h>Everyone's invited—not just youth from partnering churches! Come experience a night of worship, community, and creativity.</h>
+        <p><strong>📖 1 John 4:19</strong> – "We love because He first loved us."</p>
     </div>
 """, unsafe_allow_html=True)
 
@@ -69,6 +84,7 @@ st.markdown("### 📅 Event Details")
 st.write("**Date:** Friday, July 11")
 st.write("**Time:** 6:00 PM – 12:00 AM")
 st.write("**Location:** International Christian Church")
+
 
 # Program Overview
 with st.expander("🗓 Click to View Full Program"):
@@ -83,7 +99,7 @@ with st.expander("🗓 Click to View Full Program"):
         "9:45 PM": "Spoken Word & Poetry 🎤\n• Creative faith expressions",
         "10:00 PM": "Testimonies 🙌\n• Transformation stories",
         "10:15 PM": "Worship Finale 🔥\n• Extended worship",
-        "10:30 PM": "Altar Call",
+        "10:30 PM": "Altar Call 💖 \n• Invitation",
         "10:50 PM": "Games 🎉\n• High-energy group games • Team fun",
         "12:00 AM": "Group Photo 📸 & Dismissal\n• Final photo • Thank you & send-off"
     }
@@ -94,7 +110,7 @@ with st.expander("🗓 Click to View Full Program"):
 # Why This Night Matters
 st.subheader("💛 Why This Night Matters")
 st.markdown("""
-Let’s go beyond the fun — and reflect on the greatest love of all: the love of Christ.
+Let's go beyond the fun — and reflect on the greatest love of all: the love of Christ. His love unites, transforms, and sends us out.
 Let's gather, worship, share, and grow — together!
 """)
 
@@ -109,15 +125,15 @@ with col2:
     st.markdown("""
     - **Groups:** 2 songs or 10–12 minutes  
     - **Solo:** 5–7 minutes  
-    Let's honor each other’s time and showcase our gifts for Christ!
+    Let's honor each other's time and showcase our gifts for Christ!
     """)
 
 # Poster image row (collapsible)
 with st.expander("🖼️ View Event Posters"):
     st.markdown(f"""
         <div class="poster-row">
-            <img class="poster-img" src="data:image/png;base64,{poster2_base64}" width="400">
-            <img class="poster-img" src="data:image/png;base64,{poster1_base64}" width="400">
+            <img class="poster-img" src="data:image/png;base64,{poster2_base64}">
+            <img class="poster-img" src="data:image/png;base64,{poster1_base64}">
         </div>
     """, unsafe_allow_html=True)
 
