@@ -74,16 +74,17 @@ st.write("**Location:** International Christian Church")
 with st.expander("🗓 Click to View Full Program"):
     program = {
         "6:00 PM": "Doors Open & Registration\n• Name tag • Light refreshments",
-        "6:30 PM": "Welcome & Intro\n• Emcee • Theme & verse",
-        "6:50 PM": "Ice Breaker 🤝\n• Group game • Led by youth • Small prizes",
-        "7:10 PM": "Opening Worship 🎶\n• Worship team • Opening prayer",
-        "7:40 PM": "Word 💬\n• Pastor Michael Rhoad • Center on Christ",
-        "8:15 PM": "Breakout Sessions 🧩\n• Reflect & pray • Small groups",
-        "8:45 PM": "Musical Performances 🎵\n• Youth band • Solo/group numbers",
-        "9:25 PM": "Spoken Word & Poetry 🎤\n• Creative faith expressions",
-        "9:55 PM": "Testimonies 🙌\n• Transformation stories",
-        "10:25 PM": "Worship Finale 🔥\n• Extended worship • Corporate prayer",
-        "10:40 PM": "Games 🎉\n• High-energy group games • Team fun",
+        "7:00 PM": "Welcome & Intro\n• Emcee • Theme & verse",
+        "7:15 PM": "Ice Breaker 🤝\n• Group game • Led by youth • Small prizes",
+        "7:30 PM": "Opening Worship 🎶\n• Worship team • Opening prayer",
+        "8:00 PM": "Word 💬\n• Pastor Michael Rhoad • Center on Christ",
+        "8:30 PM": "Breakout Sessions 🧩\n• Reflect & pray • Small groups",
+        "9:00 PM": "Musical Performances 🎵\n• Youth band • Solo/group numbers",
+        "9:45 PM": "Spoken Word & Poetry 🎤\n• Creative faith expressions",
+        "10:00 PM": "Testimonies 🙌\n• Transformation stories",
+        "10:15 PM": "Worship Finale 🔥\n• Extended worship",
+        "10:30 PM": "Altar Call",
+        "10:50 PM": "Games 🎉\n• High-energy group games • Team fun",
         "12:00 AM": "Group Photo 📸 & Dismissal\n• Final photo • Thank you & send-off"
     }
     for time, details in program.items():
